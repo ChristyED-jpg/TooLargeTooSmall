@@ -4,19 +4,20 @@
 import java.util.Scanner;
 import java.util.Random;
 
-
 public class Main {
     public static void main(String[] args) {
     }
 
-    int max = 25;
-    int randomNumber = (int)(Math.random().max);
+    Random rand = new Random();
+    int randomNumber = int.nextInt(100)++;
 
-      Random rand   = new Random();
-    Scanner scanner = new Scanner ( System.in);
-    System.out.print(20);
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter your name: (1-100 ");
+    int playerGuess = scanner.nextInt();
 
-
-
+    if (playerGuess = randomNumber){
+      System.out.println( "correct") ;
 
     }
+}
+
