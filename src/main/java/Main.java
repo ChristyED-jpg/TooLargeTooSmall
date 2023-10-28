@@ -6,17 +6,21 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-    }
 
-    Random rand = new Random();
-    int randomNumber = int.nextInt(100)++;
+        Random rand = new Random();
+        int randomNumber = 14;
 
-    Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter your name: (1-100 ");
-    int playerGuess = scanner.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your name: (1-100 ");
+        int playerGuess = scanner.nextInt();
 
-    if (playerGuess = randomNumber){
-      System.out.println( "correct") ;
+        if (playerGuess == randomNumber){
+            System.out.println( "correct") ;
+
+
+        }
+
+
 
     }
 }
