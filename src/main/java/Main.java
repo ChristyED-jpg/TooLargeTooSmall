@@ -8,15 +8,22 @@ public class Main {
     public static void main(String[] args) {
 
         Random rand = new Random();
-        int randomNumber = 14;
+        int randomNumber = 28;
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your name: (1-100 ");
+        System.out.println("Enter your guess: (1-100) ");
         int playerGuess = scanner.nextInt();
 
         if (playerGuess == randomNumber){
-            System.out.println( "correct") ;
+            System.out.println( "correct guess") ;
 
+        }
+        else if ( playerGuess < randomNumber ){
+            System.out.println( " no too large ");
+
+        }
+        else !(playerGuess < randomNumber) {
+            System.out.println("no too small ");
 
         }
 
