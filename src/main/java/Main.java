@@ -8,25 +8,26 @@ public class Main {
     public static void main(String[] args) {
 
         Random rand = new Random();
-        int randomNumber = 28;
+        int randomNumber = rand.nextInt(100)+1;
+        System.out.println( " random number is "+ randomNumber);
+        int tryCount = 0;
+        while( true) {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your guess: (1-100) ");
-        int playerGuess = scanner.nextInt();
+            Scanner scanner = new Scanner(System.in);
+            int playerGuess = scanner.nextInt();
+            tryCount++;
 
-        if (playerGuess == randomNumber){
-            System.out.println( "correct guess") ;
+            if (playerGuess == randomNumber) {
+                System.out.println("correct guess");
+                break;
+            } else if (playerGuess > randomNumber) {
+                System.out.println(" no too large ");
 
+            } else {
+                System.out.println("no too small ");
+
+            }
         }
-        else if ( playerGuess < randomNumber ){
-            System.out.println( " no too large ");
-
-        }
-        else !(playerGuess < randomNumber) {
-            System.out.println("no too small ");
-
-        }
-
 
 
     }
